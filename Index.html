@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mania de Pastel e Cia | Cardápio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #24190e;
+    background: #21150d;
+}
+
+/* Imagem real dos pastéis */
+.hero {
+    min-height: 390px;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,.12), rgba(0,0,0,.02)),
+        url('https://www.guiadoturismobrasil.com/up/img/168111.jpg')
+        center 48% / cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 28px 18px;
+}
+
+.brand {
+    max-width: 760px;
+    margin: auto;
+    width: 100%;
+    color: white;
+    text-shadow: 0 2px 12px #000;
+}
+
+.brand h1 {
+    font-size: clamp(2.2rem, 8vw, 4.5rem);
+    line-height: .95;
+    margin: 0 0 12px;
+    font-weight: 900;
+}
+
+.brand p {
+    font-size: 1.05rem;
+    margin: 0;
+    background: rgba(0,0,0,.45);
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+main {
+    max-width: 760px;
+    margin: -18px auto 40px;
+    position: relative;
+    padding: 0 14px;
+}
+
+.panel {
+    background: #fffaf0;
+    border-radius: 18px;
+    padding: 22px;
+    margin: 0 0 16px;
+    box-shadow: 0 8px 28px #0005;
+}
+
+.panel h2 {
+    margin: 0 0 16px;
+    color: #9b310d;
+    font-size: 1.45rem;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 11px 0;
+    border-bottom: 1px dashed #d7c5ae;
+}
+
+.item:last-child {
+    border: 0;
+}
+
+.item strong {
+    color: #6f260e;
+    white-space: nowrap;
+}
+
+.tag {
+    display: inline-block;
+    background: #f8cf35;
+    color: #4a2600;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 30px;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.info div {
+    background: #fffaf0;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.info b {
+    display: block;
+    color: #9b310d;
+    margin-bottom: 5px;
+}
+
+@media(max-width:520px) {
+    .hero {
+        min-height: 340px;
+        background-position: center;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="brand">
+        <span class="tag">FEITO NA HORA • SABOR DE VERDADE</span>
+        <h1>Mania de<br>Pastel e Cia</h1>
+        <p>Seu momento mais gostoso do dia!</p>
+    </div>
+</header>
+
+<main>
+
+<section class="panel">
+    <h2>🥟 Pastéis tradicionais</h2>
+    <div class="item"><span>Carne</span><strong>R$ 8,00</strong></div>
+    <div class="item"><span>Queijo</span><strong>R$ 8,00</strong></div>
+    <div class="item"><span>Presunto e queijo</span><strong>R$ 9,00</strong></div>
+    <div class="item"><span>Frango</span><strong>R$ 9,00</strong></div>
+    <div class="item"><span>Pizza</span><strong>R$ 9,00</strong></div>
+    <div class="item"><span>Calabresa</span><strong>R$ 9,00</strong></div>
+</section>
+
+<section class="panel">
+    <h2>⭐ Pastéis especiais</h2>
+    <div class="item"><span>Moda da casa</span><strong>R$ 10,00</strong></div>
+    <div class="item"><span>Strogonoff</span><strong>R$ 10,00</strong></div>
+    <div class="item"><span>Quatro queijos</span><strong>R$ 10,00</strong></div>
+    <div class="item"><span>Chocolate</span><strong>R$ 10,00</strong></div>
+    <div class="item"><span>Nutella</span><strong>R$ 12,00</strong></div>
+</section>
+
+<section class="panel">
+    <h2>🥤 Bebidas</h2>
+    <div class="item"><span>Refrigerante lata</span><strong>R$ 6,00</strong></div>
+    <div class="item"><span>Refrigerante 600 ml</span><strong>R$ 8,00</strong></div>
+    <div class="item"><span>Suco</span><strong>R$ 4,00</strong></div>
+    <div class="item"><span>Água</span><strong>R$ 3,00</strong></div>
+</section>
+
+<section class="info">
+    <div>
+        <b>📍 Onde estamos</b>
+        Adicione aqui o endereço da pastelaria.
+    </div>
+    <div>
+        <b>🕒 Horário</b>
+        Adicione aqui os dias e horários de funcionamento.
+    </div>
+</section>
+
+<p style="color:#fff;text-align:center;font-size:.8rem;padding:18px">
+    Mania de Pastel e Cia • Cardápio digital
+</p>
+
+</main>
+</body>
+</html>
